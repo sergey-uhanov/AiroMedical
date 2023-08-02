@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/AiroMedical/static/css/main.0d188f89.css",
+    "main.js": "/AiroMedical/static/js/main.624b7561.js",
+    "static/js/787.0dda6938.chunk.js": "/AiroMedical/static/js/787.0dda6938.chunk.js",
+    "static/media/588.jpg": "/AiroMedical/static/media/588.6d7fa75db7287220aebd.jpg",
+    "index.html": "/AiroMedical/index.html",
+    "main.0d188f89.css.map": "/AiroMedical/static/css/main.0d188f89.css.map",
+    "main.624b7561.js.map": "/AiroMedical/static/js/main.624b7561.js.map",
+    "787.0dda6938.chunk.js.map": "/AiroMedical/static/js/787.0dda6938.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d188f89.css",
+    "static/js/main.624b7561.js"
+  ]
+}
