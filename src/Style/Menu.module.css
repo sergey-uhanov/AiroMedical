@@ -1,0 +1,19 @@
+.menuBlock{
+    background-color: #f5ac4a;
+    max-width: 1165px;
+    margin: 0 auto;
+    height: 7vh;
+    font-family: Roboto, Arial, sans-serif;
+    display: flex;
+    align-items:center;
+    font-weight: bold;
+    border-radius: 10px;
+
+
+}
+.item{
+    margin-left: 20px;
+}
+.item:hover{
+    color: #575656;
+}

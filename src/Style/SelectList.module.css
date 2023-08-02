@@ -1,0 +1,78 @@
+.sideList{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.card{
+    background-color: #facb89;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 18.7vh;
+    margin-bottom: 5px;
+}
+.text{
+    max-width: 90%;
+    display: flex;
+}
+.imgBeer{
+    max-width: 35px;
+    margin-right: 25px;
+}
+
+.information{
+    font-family: Roboto ;
+    margin-left: 20px;
+    line-height: 20px;
+
+}
+.title{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn{
+    padding: 5px 15px;
+    background-color: #a65555;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: #d97c7c;
+}
+.notItem{
+    font-family: Roboto;
+    font-size: 30px;
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+    color: #3d3939;
+}
+@media (max-width: 768px)  {
+    .card{
+        height: 20.5vh;}
+    .title{
+        margin: 5px;
+    }
+    .imgBeer{
+        margin:0  5px;
+    }
+}
+@media (max-width: 400px)  {
+    .card{
+        height: 35vh;
+    }
+
+}
+@media (max-height: 650px)  {
+    .card{
+        height: 30.5vh;
+    }
+}
+@media (max-height: 430px)  {
+    .card{
+        height: 40.5vh;
+    }
+}

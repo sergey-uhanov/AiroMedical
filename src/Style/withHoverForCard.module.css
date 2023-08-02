@@ -1,0 +1,40 @@
+.card:hover {
+
+
+
+    -webkit-animation: shadow-drop-2-center .3s cubic-bezier(.25, .46, .45, .94) both;
+    animation: shadow-drop-2-center .3s cubic-bezier(.25, .46, .45, .94) both
+}
+
+
+
+
+@-webkit-keyframes shadow-drop-2-center {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+        -webkit-box-shadow: 0 0 0 0 transparent;
+        box-shadow: 0 0 0 0 transparent
+    }
+    100% {
+        -webkit-transform: translate(5px);
+        transform: translate(5px);
+        -webkit-box-shadow: 0 0 20px 0 rgb(25, 70, 243);
+        box-shadow: 0 0 20px 0rgb(25, 70, 243)
+    }
+}
+
+@keyframes shadow-drop-2-center {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+        -webkit-box-shadow: 0 0 0 0 transparent;
+        box-shadow: 0 0 0 0 transparent
+    }
+    100% {
+        -webkit-transform: translate(5px);
+        transform: translate(5px);
+        -webkit-box-shadow: 0 0 20px 0 rgb(25, 70, 243);
+        box-shadow: 0 0 20px 0 rgb(25, 70, 243)
+    }
+}

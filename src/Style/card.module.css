@@ -1,0 +1,115 @@
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 10px;
+}
+
+
+/* Для WebKit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 5px; /* Ширина ползунка */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Цвет заполнения ползунка */
+    border-radius: 10px;
+}
+
+
+/* Стили для скроллбара */
+.custom-scrollbar {
+
+    height: 300px;
+    overflow: auto;
+
+}
+
+/* Стили для ползунка */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px; /* Задайте желаемый радиус границы */
+}
+
+/* Дополнительные стили для Firefox */
+.custom-scrollbar {
+    scrollbar-color: #888 transparent; /* Цвет заполнения ползунка и фона */
+    border-radius: 8px; /* Задайте желаемый радиус границы */
+}
+
+.card {
+    background-color: #facb89;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 18.7vh;
+    margin: 0 15px 5px 15px;
+}
+
+.text {
+    max-width: 90%;
+    display: flex;
+}
+
+.imgBeer {
+    max-width: 35px;
+    margin-right: 25px;
+}
+
+.information {
+    font-family: Roboto, Arial, sans-serif;
+    margin-left: 20px;
+    line-height: 20px;
+    color: #653535;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.blockButton button, .link {
+    font-size: 19px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #b76043;
+    margin-right: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        height: 20.5vh;
+    }
+
+    .title {
+        margin: 5px;
+    }
+
+    .imgBeer {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        height: 300px;
+    }
+
+}
+
+@media (max-height: 650px) {
+    .card {
+        height: 30.5vh;
+    }
+}
+
+@media (max-height: 430px) {
+    .card {
+        height: 40.5vh;
+    }
+}
+
