@@ -11,6 +11,7 @@ const AppRouter = () => {
             <Route path='/maine' element={<MainePage/>}/>
             <Route path='/recipe/:id' element={<RecipeDetails/>}/>
             <Route path='/select-list' element={<SelectList/>}/>
+            <Route path='/*' element={<MainePage/>}/>
         </Routes>
     );
 };
