@@ -5,14 +5,16 @@ import SelectedRecipesStore from "../Stores/SelectedRecipesStore";
 import {handleScroll} from '../Function/scrollUtils';
 import handleContextMenu from '../Function/handleContextMenu';
 import st from '../Style/card.module.css';
-import RecipeCardForMouseCursor from './RecipeCardForMouseCursor'
-import RecipeCardForTouchScreen from "./RecipeCardForTouchScreen";
+import RecipeCardForMouseCursor from '../Components/RecipeCardForMouseCursor'
+import RecipeCardForTouchScreen from "../Components/RecipeCardForTouchScreen";
+
 
 const Cards = () => {
     const {recipe, setRecipe} = useBeerStore();
     const [listBear, setListBear] = useState([]);
     const [visibleItems, setVisibleItems] = useState(15);
     const [currentPage, setCurrentPage] = useState(1);
+    const [isScrolling, setIsScrolling] = useState(false);
     const {pushSelectRecipe} = SelectedRecipesStore();
     const hasTouchScreen = 'ontouchstart' in window
 
@@ -40,8 +42,10 @@ const Cards = () => {
         handleContextMenu(event, id, pushSelectRecipe, listBear);
     }
 
+
     function handleScrollEvent(event) {
-        handleScroll(event, setVisibleItems, setCurrentPage, recipe, visibleItems);
+           handleScroll(event, setVisibleItems, setCurrentPage, recipe, visibleItems);
+
     }
 
     return (
