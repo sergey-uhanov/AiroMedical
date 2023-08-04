@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Cards from "../Page/Cards";
+import Cards from "../Components/Cards";
 
 const MainePage = () => {
 

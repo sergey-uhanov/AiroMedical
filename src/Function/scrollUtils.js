@@ -1,5 +1,5 @@
 
-export function handleScroll(event, setVisibleItems, setCurrentPage, recipe, visibleItems) {
+export  function handleScroll(event, setVisibleItems, setCurrentPage, recipe, visibleItems) {
     let { scrollTop, clientHeight, scrollHeight } = event.currentTarget;
     const isScrolledToTop = scrollTop === 0;
     const isScrolledToBottom = scrollHeight - (scrollTop + clientHeight) < 400;
@@ -7,11 +7,11 @@ export function handleScroll(event, setVisibleItems, setCurrentPage, recipe, vis
     // Вызываем функцию для скролла вниз
     if (isScrolledToBottom  && visibleItems <= 325) {
 
-        setTimeout(() => {
+
             setVisibleItems((prevVisibleItems) => prevVisibleItems + 5);
 
-        }, 0);
-        const itemsToBottom = recipe.length - visibleItems;
+
+        const itemsToBottom =  recipe.length - visibleItems;
         if (itemsToBottom === 5) {
             setCurrentPage((prevCurrentPage) => prevCurrentPage + 1);
 

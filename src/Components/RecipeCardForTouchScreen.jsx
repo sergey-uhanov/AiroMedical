@@ -1,9 +1,21 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import st from "../Style/card.module.css";
-
 import {Link} from "react-router-dom";
+import SelectedRecipesStore from "../Stores/SelectedRecipesStore";
+
+
+
 
 const RecipeCardForTouchScreen = ({recipe, onContextMenuHandler}) => {
+    const { selectRecipe, pushSelectRecipe } = SelectedRecipesStore();
+    const [listSelectRecipe, setListSelectRecipe] = useState(selectRecipe);
+    useEffect(()=>{
+        setListSelectRecipe(selectRecipe)
+    },[selectRecipe])
+
+    function checkIfFieldExists(arr, fieldName, targetValue) {
+        return arr.some(obj => obj[fieldName] === targetValue);
+    }
     return (<div key={recipe.id}>
         <div className={st.card} key={recipe.id}>
             <div className={st.text}>
@@ -21,7 +33,7 @@ const RecipeCardForTouchScreen = ({recipe, onContextMenuHandler}) => {
                                 onContextMenuHandler(event, recipe.id);
                             }}
                         >
-                            Add
+                            { checkIfFieldExists(listSelectRecipe, 'id',recipe.id)?"Del":'Add'}
                         </button>
 
                         <Link className={st.link} to={`/recipe/${recipe.id}`}>Look</Link>

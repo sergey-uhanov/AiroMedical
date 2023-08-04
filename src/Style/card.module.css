@@ -43,7 +43,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 18.7vh;
+    height: 18vh;
     margin: 0 15px 5px 15px;
 }
 
@@ -62,22 +62,96 @@
     margin-left: 20px;
     line-height: 20px;
     color: #653535;
+    position: relative;
+}
+.title{
+    font-weight: bold;
 }
 
-.title {
+
+.blockButton  {
+    font-size: 19px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right: 15px;
+    position: relative;
+}
+button, button:focus {
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 0.7rem;
+    background-image: linear-gradient(rgb(243, 168, 80), rgb(158, 129, 254));
+    border: 2px solid rgb(50, 50, 50);
+    border-bottom: 5px solid rgb(50, 50, 50);
+    box-shadow: 0px 1px 6px 0px rgb(158, 129, 254);
+    transform: translate(0, -3px);
+    transition: 0.2s;
+    transition-timing-function: linear;
+    margin-right: 10px;
+}
+
+button:active {
+    transform: translate(0, 0);
+    border-bottom: 2px solid rgb(50, 50, 50);
+}
+
+.select{
     margin-bottom: 40px;
     font-size: 20px;
     font-weight: bold;
 
 }
-
-.blockButton button, .link {
-    font-size: 19px;
-    border-radius: 10px;
-    padding: 10px 20px;
-    background-color: #b76043;
-    margin-right: 15px;
+.select:before{
+    content: "✓";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: -14px;
+    font-size: 16px;
+    font-weight: bold;
 }
+
+.noSelect{
+
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.link, .link:focus {
+    position: relative;
+    bottom: 2px;
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 0.7rem;
+    background-image: linear-gradient(rgb(243, 168, 80), rgb(158, 129, 254));
+    border: 2px solid rgb(50, 50, 50);
+    border-bottom: 5px solid rgb(50, 50, 50);
+    box-shadow: 0px 1px 6px 0px rgb(158, 129, 254);
+    transform: translate(0, -3px);
+    transition: 0.2s;
+    transition-timing-function: linear;
+}
+
+.link:active {
+    transform: translate(0, 0);
+    border-bottom: 2px solid rgb(50, 50, 50);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 768px) {
@@ -96,7 +170,7 @@
 
 @media (max-width: 400px) {
     .card {
-        height: 300px;
+        height: 30vh;
     }
 
 }

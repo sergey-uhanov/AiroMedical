@@ -1,5 +1,5 @@
 .menuBlock{
-    background-color: #f5ac4a;
+
     max-width: 1165px;
     margin: 0 auto;
     height: 7vh;
@@ -8,12 +8,49 @@
     align-items:center;
     font-weight: bold;
     border-radius: 10px;
-
+    gap: 15px;
+    margin-bottom: 7px;
 
 }
-.item{
-    margin-left: 20px;
+
+.item {
+    padding: 10px 2em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #131313;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #ecd448;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #000;
 }
-.item:hover{
-    color: #575656;
+
+.item:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #ff6700;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+}
+
+.item:hover {
+    background-color: #4cc9f0;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.item:hover::before {
+    transform: skewX(30deg) translate(200%, -50%);
+    transition-delay: 0.1s;
+}
+
+.item:active {
+    transform: scale(0.9);
 }

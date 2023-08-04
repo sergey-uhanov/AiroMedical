@@ -9,8 +9,6 @@ const RecipeDetails = () => {
     const [recipe, setRecipe] = useState([]);
 
     useEffect(() => {
-        // Fetch the recipe details using fetchRecipes or any appropriate API call
-        // Assuming fetchRecipes returns an array of recipes
         fetchRecipes().then((recipes) => setRecipe(recipes));
     }, []);
 
@@ -22,6 +20,8 @@ const RecipeDetails = () => {
     if (!allDetails) {
         return <div>Loading...</div>;
     }
+
+
 
     return (
         <div className={st.container}>
@@ -46,8 +46,8 @@ const RecipeDetails = () => {
                     <p>Malt:</p>
                     <ul>
                         {allDetails.ingredients &&
-                            allDetails.ingredients.malt.map((malt) => (
-                                <li key={malt.name}>
+                            allDetails.ingredients.malt.map((malt,index) => (
+                                <li key={malt.name +  index}>
                                     {malt.name} - {malt.amount.value} {malt.amount.unit}
                                 </li>
                             ))}
@@ -55,8 +55,8 @@ const RecipeDetails = () => {
                     <p>Hops:</p>
                     <ul>
                         {allDetails.ingredients &&
-                            allDetails.ingredients.hops.map((hop) => (
-                                <li key={hop.name}>
+                            allDetails.ingredients.hops.map((hop,index) => (
+                                <li key={hop.name+  index}>
                                     {hop.name} - {hop.amount.value} {hop.amount.unit}, Add: {hop.add},
                                     Attribute: {hop.attribute}
                                 </li>

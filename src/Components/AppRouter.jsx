@@ -1,8 +1,8 @@
 import React from 'react';
 import {Route, Routes} from "react-router-dom";
-import MainePage from "./MainePage";
-import RecipeDetails from "./RecipeDetails";
-import SelectList from "./SelectList";
+import MainePage from "../Page/MainePage";
+import RecipeDetails from "../Page/RecipeDetails";
+import SelectList from "../Page/SelectList";
 
 
 const AppRouter = () => {
