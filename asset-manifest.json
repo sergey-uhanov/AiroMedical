@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/AiroMedical/static/css/main.0d188f89.css",
-    "main.js": "/AiroMedical/static/js/main.46d08097.js",
-    "static/js/787.0dda6938.chunk.js": "/AiroMedical/static/js/787.0dda6938.chunk.js",
-    "static/media/588.jpg": "/AiroMedical/static/media/588.6d7fa75db7287220aebd.jpg",
-    "index.html": "/AiroMedical/index.html",
-    "main.0d188f89.css.map": "/AiroMedical/static/css/main.0d188f89.css.map",
-    "main.46d08097.js.map": "/AiroMedical/static/js/main.46d08097.js.map",
-    "787.0dda6938.chunk.js.map": "/AiroMedical/static/js/787.0dda6938.chunk.js.map"
+    "main.css": "/sergey-uhanov/AiroMedical-build/static/css/main.72578175.css",
+    "main.js": "/sergey-uhanov/AiroMedical-build/static/js/main.b4720ad3.js",
+    "static/js/787.0dda6938.chunk.js": "/sergey-uhanov/AiroMedical-build/static/js/787.0dda6938.chunk.js",
+    "static/media/588.jpg": "/sergey-uhanov/AiroMedical-build/static/media/588.6d7fa75db7287220aebd.jpg",
+    "index.html": "/sergey-uhanov/AiroMedical-build/index.html",
+    "main.72578175.css.map": "/sergey-uhanov/AiroMedical-build/static/css/main.72578175.css.map",
+    "main.b4720ad3.js.map": "/sergey-uhanov/AiroMedical-build/static/js/main.b4720ad3.js.map",
+    "787.0dda6938.chunk.js.map": "/sergey-uhanov/AiroMedical-build/static/js/787.0dda6938.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d188f89.css",
-    "static/js/main.46d08097.js"
+    "static/css/main.72578175.css",
+    "static/js/main.b4720ad3.js"
   ]
 }
