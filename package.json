@@ -1,8 +1,8 @@
 {
   "name": "airo-medical",
   "version": "0.1.0",
+  "homepage": "https://github.com/sergey-uhanov/AiroMedical-build",
   "private": true,
-  "homepage": "https://sergey-uhanov.github.io/AiroMedical/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -20,8 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": [

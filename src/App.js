@@ -1,6 +1,6 @@
 import './reset.css';
 import MainePage from "./Page/MainePage";
-import {HashRouter} from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 import RecipeDetails from "./Page/RecipeDetails";
 import AppRouter from "./Components/AppRouter";
 import Menu from "./Components/Menu";
@@ -26,10 +26,10 @@ function App() {
     return (
         <div>
             {isLoading ? <Loader />
-                : <HashRouter>
+                : <BrowserRouter>
                     <Menu/>
                     <AppRouter/>
-                </HashRouter> }
+                </BrowserRouter> }
         </div>
 
 
