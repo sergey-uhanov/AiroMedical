@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.73a52b04.css",
-    "main.js": "./static/js/main.b53d9e8a.js",
-    "static/js/787.0dda6938.chunk.js": "./static/js/787.0dda6938.chunk.js",
-    "static/media/588.jpg": "./static/media/588.6d7fa75db7287220aebd.jpg",
-    "index.html": "./index.html",
-    "main.73a52b04.css.map": "./static/css/main.73a52b04.css.map",
-    "main.b53d9e8a.js.map": "./static/js/main.b53d9e8a.js.map",
-    "787.0dda6938.chunk.js.map": "./static/js/787.0dda6938.chunk.js.map"
+    "main.css": "/AiroMedical/static/css/main.3b528780.css",
+    "main.js": "/AiroMedical/static/js/main.7d254c4e.js",
+    "static/js/787.0dda6938.chunk.js": "/AiroMedical/static/js/787.0dda6938.chunk.js",
+    "static/media/588.jpg": "/AiroMedical/static/media/588.6d7fa75db7287220aebd.jpg",
+    "index.html": "/AiroMedical/index.html",
+    "main.3b528780.css.map": "/AiroMedical/static/css/main.3b528780.css.map",
+    "main.7d254c4e.js.map": "/AiroMedical/static/js/main.7d254c4e.js.map",
+    "787.0dda6938.chunk.js.map": "/AiroMedical/static/js/787.0dda6938.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73a52b04.css",
-    "static/js/main.b53d9e8a.js"
+    "static/css/main.3b528780.css",
+    "static/js/main.7d254c4e.js"
   ]
 }
