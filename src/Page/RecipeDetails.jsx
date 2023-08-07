@@ -13,15 +13,13 @@ const RecipeDetails = () => {
     }, []);
 
     useEffect(() => {
-        setAllDetails(recipe.find((item) => item.id === id) || {});
+        setAllDetails(recipe.find((item) => item.id == id) || {});
     }, [recipe, id]);
 
     // Conditional rendering to ensure recipe is available before rendering
     if (!allDetails) {
         return <div>Loading...</div>;
     }
-
-
 
     return (
         <div className={st.container}>
@@ -46,8 +44,8 @@ const RecipeDetails = () => {
                     <p>Malt:</p>
                     <ul>
                         {allDetails.ingredients &&
-                            allDetails.ingredients.malt.map((malt,index) => (
-                                <li key={malt.name +  index}>
+                            allDetails.ingredients.malt.map((malt, index) => (
+                                <li key={`${malt.name} ${index}`}>
                                     {malt.name} - {malt.amount.value} {malt.amount.unit}
                                 </li>
                             ))}
@@ -56,7 +54,7 @@ const RecipeDetails = () => {
                     <ul>
                         {allDetails.ingredients &&
                             allDetails.ingredients.hops.map((hop,index) => (
-                                <li key={hop.name+  index}>
+                                <li key={`${hop.name} ${index}`}>
                                     {hop.name} - {hop.amount.value} {hop.amount.unit}, Add: {hop.add},
                                     Attribute: {hop.attribute}
                                 </li>

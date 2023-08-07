@@ -1,5 +1,5 @@
 import './reset.css';
-import {BrowserRouter} from 'react-router-dom';
+import {BrowserRouter, HashRouter} from 'react-router-dom';
 import AppRouter from "./Components/AppRouter";
 import Menu from "./Components/Menu";
 import React, {useEffect, useState} from 'react';
@@ -24,10 +24,10 @@ function App() {
     return (
         <div>
             {isLoading ? <Loader />
-                : <BrowserRouter>
+                : <HashRouter>
                     <Menu/>
                     <AppRouter/>
-                </BrowserRouter> }
+                </HashRouter> }
 
         </div>
 
