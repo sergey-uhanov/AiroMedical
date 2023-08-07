@@ -15,7 +15,6 @@ const Cards = () => {
     const [listBear, setListBear] = useState([]);
     const [visibleItems, setVisibleItems] = useState(15);
     const [currentPage, setCurrentPage] = useState(1);
-    const [listSelectRecipe, setLitSelectRecipe] = useState(selectRecipe)
     const hasTouchScreen = 'ontouchstart' in window
 
 
@@ -30,7 +29,7 @@ const Cards = () => {
                 setRecipe([...recipe, ...data]);
             });
         }
-    }, [currentPage]);
+    },[currentPage]);
 
 
     function onContextMenuHandler(event, id) {

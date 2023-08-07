@@ -7,7 +7,7 @@ import SelectedRecipesStore from "../Stores/SelectedRecipesStore";
 
 
 const RecipeCardForTouchScreen = ({recipe, onContextMenuHandler}) => {
-    const { selectRecipe, pushSelectRecipe } = SelectedRecipesStore();
+    const { selectRecipe } = SelectedRecipesStore();
     const [listSelectRecipe, setListSelectRecipe] = useState(selectRecipe);
     useEffect(()=>{
         setListSelectRecipe(selectRecipe)

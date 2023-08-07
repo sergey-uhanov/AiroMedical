@@ -11,7 +11,7 @@ const combinedClassNames = `${st.card} ${hover.card}`;
 
 
 const RecipeCardForMouseCursor = ({recipe, onContextMenuHandler}) => {
-    const { selectRecipe, pushSelectRecipe } = SelectedRecipesStore();
+    const { selectRecipe } = SelectedRecipesStore();
     const [listSelectRecipe, setListSelectRecipe] = useState(selectRecipe);
     useEffect(()=>{
         setListSelectRecipe(selectRecipe)

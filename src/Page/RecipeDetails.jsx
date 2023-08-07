@@ -13,7 +13,7 @@ const RecipeDetails = () => {
     }, []);
 
     useEffect(() => {
-        setAllDetails(recipe.find((item) => item.id == id) || {});
+        setAllDetails(recipe.find((item) => item.id === id) || {});
     }, [recipe, id]);
 
     // Conditional rendering to ensure recipe is available before rendering
